@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<div>OKI</div>
+<script type="text/javascript">
+
+// function info(result){
+//   if(result){
+//     let firstName = "Ivan";
+//     let birthDay = 1990;
+//     console.log(firstName + ", рожденный в " + birthDay + "");
+//   }
+// }
+
+// let i = 1;
+// for(let i=0; i<3; i++){
+//   console.log(i);
+// }
+// console.log(i);
+
+let firstName = "Ivan";
+let lastName = "Ivanov";
+const birthDay = 1990;
+//
+// function calcAge(year){
+//   // let date = new Date();
+//   return new Date().getFullYear() - year; // получили возраст
+// }
+// const fio = `${firstName} ${lastName}, рожден в ${birthDay} году, ему ${calcAge(birthDay)}`;
+// // console.log(fio);
+// console.log(fio.repeat(30));
+
+let calcAge2 = year => new Date().getFullYear()-year;
+console.log(calcAge2(birthDay));
+
+// let sum = function(a,b){
+//   return a+b;
+// }
+//
+// let sum = (a, b=1) => {
+//   if(!isNaN(a)){
+//     console.log(a+b);
+//   }
+// }
+// console.log(sum(9));
+
+
+let box = {
+  color: 'green',
+  position: 1,
+  clickMe: function(){
+    document.querySelector('div').addEventListener('click',() => {
+      consoe.log(this);
+      let str = `Это контейнер № ${this.position}, цвет ${this.color}`;
+      console.log(str);
+    })
+  }
+}
+box.clickMe();
+
+
+
+
+</script>
+</html>
