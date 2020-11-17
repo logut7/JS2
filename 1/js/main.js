@@ -5,8 +5,9 @@ const products = [
     {id: 4, title: 'Gamepad', price: 50},
 ];
 //Функция для формирования верстки каждого товара
-const renderProduct = (title, price) => {
+const renderProduct = (title, price, img='https://placehold.it/200x150') => {
     return `<div class="product-item">
+                <img src="${img}">
                 <h3>${title}</h3>
                 <p>${price}</p>
                 <button class="buy-btn">Купить</button>
