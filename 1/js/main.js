@@ -16,7 +16,7 @@ const renderProduct = (title, price, img='https://placehold.it/200x150') => {
 const renderPage = list => {
     const productsList = list.map(item => renderProduct(item.title, item.price));
     console.log(productsList);
-    document.querySelector('.products').innerHTML = productsList;
+    document.querySelector('.products').innerHTML = productsList.join('');
 };
 
 renderPage(products);
